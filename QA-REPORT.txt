@@ -1,0 +1,7 @@
+DIGITAL PULSE BRIEF TOOLS — SOURCE QA REPORT
+Build: 2.1.0 GitHub-ready
+Date: 2026-10-07
+
+Static checks are run during packaging. Live browser behaviour must still be tested on WordPress after deployment, especially HEIC/HEIF, AVIF and large PDF workflows.
+
+The 2026-10-07 user QA baseline reported 21/28 tools working before fixes. This source integrates targeted fixes for the 7 reported problem areas without intentionally changing the processing logic of the other 21 tools.

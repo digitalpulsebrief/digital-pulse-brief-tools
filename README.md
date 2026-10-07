@@ -1,79 +1,119 @@
 # Digital Pulse Brief Tools
 
-A free, privacy-first WordPress toolkit from **Digital Pulse Brief** with **28 browser-based image, PDF, design, SEO and writing utilities**.
+Free browser-based image, PDF, design, SEO and writing utilities for WordPress by **Digital Pulse Brief**.
 
-Live tools hub: https://digitalpulsebrief.com/tools/
+**28 practical tools. One clean hub. Built for everyday use.**
 
-## What is included
+[🌐 Open Live Tools](https://digitalpulsebrief.com/tools/) ·
+[⬇️ Download Latest Release](https://github.com/digitalpulsebrief/digital-pulse-brief-tools/releases/latest) ·
+[📰 Digital Pulse Brief](https://digitalpulsebrief.com/)
 
-### Image tools (14)
-Image Compressor, Image Resizer, Image Cropper, Universal Image Converter, HEIC / HEIF Converter, JPG to PNG, PNG to JPG, JPG / PNG to WebP, WebP to JPG / PNG, AVIF Converter, Image to PDF, Image Dimensions Checker, DPI Checker and Aspect Ratio Calculator.
+---
 
-### PDF tools (6)
-Images to PDF, Merge PDF, Split PDF, Extract PDF Pages, Reorder PDF Pages and Compress PDF.
+## About
 
-### Design & web tools (8)
-QR Code Generator, Contrast Checker, Pixel ↔ REM Converter, Social Media Image Size Calculator, Meta Tag Generator, Open Graph Generator, Word Counter and Character Counter.
+**Digital Pulse Brief Tools** is a WordPress plugin that provides a collection of lightweight utilities for common image, PDF, web, SEO and writing tasks.
 
-## WordPress usage
+The tools are designed to run in the visitor's browser whenever practical, helping reduce unnecessary server-side file processing.
 
-Activate the plugin, then use the hub shortcode:
+The plugin works with WordPress pages, Elementor Shortcode widgets, Gutenberg Shortcode blocks and other shortcode-compatible page builders.
 
-```text
-[dpb_tools_hub]
-```
+---
 
-Every tool also has its own shortcode. The full shortcode list is available in **WordPress → Tools → DPB Tools** after activation.
+## Included Tools
 
-The plugin works with Elementor Shortcode widgets, Gutenberg Shortcode blocks and the Classic Editor.
+### Image Tools
 
-## Privacy architecture
+1. Image Compressor
+2. Image Resizer
+3. Image Cropper
+4. Universal Image Converter
+5. HEIC / HEIF Converter
+6. JPG to PNG
+7. PNG to JPG
+8. JPG / PNG to WebP
+9. WebP to JPG / PNG
+10. AVIF Converter
+11. Image to PDF
+12. Image Dimensions Checker
+13. DPI Checker
+14. Aspect Ratio Calculator
 
-The plugin does **not** provide a WordPress file-upload endpoint for tool inputs. File tools are designed to process the selected file in the visitor's browser whenever practical. Large files and batches can still be limited by browser/device memory.
+### PDF Tools
 
-## Current release: 2.1.0
+15. Images to PDF
+16. Merge PDF
+17. Split PDF
+18. Extract PDF Pages
+19. Reorder PDF Pages
+20. Compress PDF
 
-This GitHub build includes the QA fixes that were previously applied to the live site as compatibility patches:
+### Design & Web Tools
 
-- improved select/dropdown contrast;
-- darker, more visible range-slider handles;
-- safer cropper readiness and null-canvas handling;
-- HEIC/HEIF support in Image Dimensions Checker;
-- HEIC output options for JPG/JPEG, PNG, WebP and AVIF where browser encoding supports the output;
-- Image Compressor output selection for original, JPG, JPEG, PNG, WebP and AVIF;
-- live original/estimated image-size readouts;
-- clearer Aspect Ratio Calculator instructions and common presets.
+21. QR Code Generator
+22. Contrast Checker
+23. Pixel ↔ REM Converter
+24. Social Media Image Size Calculator
+25. Meta Tag Generator
+26. Open Graph Generator
+27. Word Counter
+28. Character Counter
 
-## Important limitations
+---
 
-- AVIF decoding/encoding depends on the visitor's browser. The plugin disables or reports unsupported AVIF output rather than intentionally creating a falsely labelled file.
-- HEIC/HEIF conversion can lose original metadata.
-- PDF compression is a lossy raster mode intended mainly for image-heavy PDFs. It can remove selectable text, links, forms and vector structure.
-- Already optimized PDFs may not become smaller.
-- Very large files or batches can exhaust memory on low-RAM devices because processing is browser-side.
-- Social-media size presets can become outdated as platforms change their recommendations.
+## Key Features
 
-## Runtime dependencies
+- 28 browser-based utilities
+- Responsive desktop and mobile interface
+- Image compression and format conversion
+- JPG, JPEG, PNG, WebP, HEIC/HEIF and AVIF workflows
+- Image resizing, cropping and dimension checking
+- PDF merge, split, extraction and page reordering
+- Image-to-PDF conversion
+- Lossy PDF compression for image-heavy documents
+- QR Code Generator
+- WCAG contrast checking
+- PX ↔ REM conversion
+- Meta Tag and Open Graph generators
+- Word and character counters
+- No account required for front-end tool use
+- Conditional loading of tool assets
+- Designed to avoid unnecessary WordPress file uploads
 
-Third-party libraries are conditionally loaded from jsDelivr only on tools that need them. They are **not vendored into this repository**. See [`THIRD-PARTY-NOTICES.md`](THIRD-PARTY-NOTICES.md).
+---
+
+## Latest Release
+
+Current release:
+
+**Digital Pulse Brief Tools v2.1.0**
+
+Download the WordPress-installable ZIP:
+
+[Download latest release](https://github.com/digitalpulsebrief/digital-pulse-brief-tools/releases/latest)
+
+---
 
 ## Installation
 
-1. Download or clone this repository.
-2. Zip the `digital-pulse-brief-tools` folder if needed.
-3. In WordPress, go to **Plugins → Add Plugin → Upload Plugin**.
-4. Upload the ZIP and activate **Digital Pulse Brief Tools**.
-5. Add the hub or individual tool shortcodes to the required pages.
+1. Download the latest plugin ZIP from the GitHub Releases page.
+2. Open your WordPress dashboard.
+3. Go to **Plugins → Add Plugin → Upload Plugin**.
+4. Upload the ZIP file.
+5. Click **Install Now**.
+6. Activate **Digital Pulse Brief Tools**.
 
-### Existing DPB live-site note
+After activation, open:
 
-If this integrated `2.1.0` build replaces the earlier plugin on the Digital Pulse Brief live site, disable the temporary WPCode compatibility snippets **1114, 1115 and 1116** after confirming the new plugin build is active. Keeping both can duplicate event handlers.
+**Tools → DPB Tools**
 
-## License
+to view the available shortcodes.
 
-Digital Pulse Brief Tools is licensed under **GPL-2.0-or-later**. See [`LICENSE`](LICENSE).
+---
 
-## Website
+## Using the Tools
 
-Digital Pulse Brief — AI, Technology & Business — Explained Clearly  
-https://digitalpulsebrief.com/
+The main tools hub can be added using:
+
+```text
+[dpb_tools_hub]
